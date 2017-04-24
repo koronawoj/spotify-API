@@ -1,0 +1,13 @@
+{
+  "playlists": [
+    {
+      "name": "Playlist",
+      "tracks": [],
+      "color": "#3ac5c1",
+      "favourite": true,
+      "description": "New Playlist",
+      "category": "Filmowa",
+      "id": 1
+    }
+  ]
+}
