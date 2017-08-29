@@ -8,6 +8,15 @@
       "description": "New Playlist",
       "category": "Filmowa",
       "id": 1
+    },
+    {
+      "name": "iugy",
+      "tracks": [],
+      "color": "#FF0000",
+      "favourite": false,
+      "description": "ulhliujk",
+      "category": "Rockowa",
+      "id": 2
     }
   ]
 }

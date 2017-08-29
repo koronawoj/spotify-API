@@ -12,6 +12,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { PlaylistService } from './playlists/playlist.service';
 import { MusicSharedModule } from './music-shared/music-shared.module';
 import { PlaylistSelectionService } from './music-shared/playlist-selection.service';
+import { AuthService } from './auth.service';
 
 @NgModule({
   declarations: [
@@ -29,8 +30,13 @@ import { PlaylistSelectionService } from './music-shared/playlist-selection.serv
   ],
   providers: [
     PlaylistService,
-    PlaylistSelectionService
+    PlaylistSelectionService,
+    AuthService
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+constructor(private auth:AuthService){
+this.auth.getToken()
+}
+}
